@@ -17,7 +17,7 @@ Before starting, make sure you have the following programs installed on your sys
     ├── app/ 
 	    ├── node_modules
 	    ├── public
-		├── src
+        ├── src
 	    ├── package.json
 	    ├── package-lock.json
 	    ├── vite.config.js
