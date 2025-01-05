@@ -1,0 +1,18 @@
+.most-searched-companies-main{
+    border: 2px solid #01EFB2;
+    border-radius:  20px;
+    padding: 10px 10px 10px 20px;
+}
+
+.most-searched-companies-main ul {
+    list-style-type: none;
+}
+
+.most-searched-companies-main ul li{
+    margin-bottom:  1rem;
+}
+
+.most-searched-companies-main p {
+    color: #1D1D59;
+}
+

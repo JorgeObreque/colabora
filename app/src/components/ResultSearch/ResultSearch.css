@@ -1,0 +1,27 @@
+.result-search-main .title{
+    background-color: #2073F3;
+    color: #FFFFFF;
+    border-radius: 15px 15px 0px 0px;
+    padding-left: 15px;
+    height: 3em;
+    display: flex;     
+    align-items: center;
+}
+
+.result-search-main{
+    border: 2px solid #2073F3;
+    border-radius:  25px;
+}
+
+.result-search-main ul {
+    list-style-type: none;
+    padding: 10px 10px 10px 30px;
+}
+
+.result-search-main ul li{
+    margin-bottom:  1rem;
+}
+
+.result-search-main p {
+    color: #1D1D59;
+}

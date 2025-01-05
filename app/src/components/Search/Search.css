@@ -1,0 +1,22 @@
+.search-main p,
+.search-main h1
+{
+    color: #1D1D59;
+}
+
+.search-background{
+    background-color: #01EFB2;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.search-button{
+    border-radius: 50px;
+    height: 55px;
+    font-weight: bold;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+
+
