@@ -1,0 +1,36 @@
+.company-main{
+    padding: 30px 0 30px 0;
+}
+
+.company-main .header{
+    background-color: #2073F3;
+    color: #FFFFFF;
+    border-radius: 25px 25px 0 0;
+    padding: 20px 20px 10px 20px;
+    position: relative;
+}
+
+.company-main .header p{
+    padding: 5px;
+    margin:0;
+    text-align: left;
+}
+
+.company-main .header .volver {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #2073F3; 
+    background-color: #FFFFFF;
+    padding: 0 15px 2px 10px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.company-main .body{
+    border: #2073F3 2px solid;
+    border-radius: 0 0 25px 25px;
+    padding: 10px 20px 20px 20px;
+}

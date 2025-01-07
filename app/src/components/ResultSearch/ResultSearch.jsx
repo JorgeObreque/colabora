@@ -1,5 +1,6 @@
 import React from "react";
 import './ResultSearch.css';
+import { Link } from "react-router-dom";
 
 const ResultSearch = () => {
     return (
@@ -8,7 +9,7 @@ const ResultSearch = () => {
                 <div className="result-search-main">
                     <div className="title">Resultados de: falabella</div>
                     <ul>
-                        <li><a href="">Banco Falabella</a></li>
+                        <li><Link to="/company">Banco Falabella</Link></li>
                         <li><a href="">Falabella.com</a></li>
                         <li><a href="">Viajes Falabella</a></li>
                         <li><a href="">Seguros Falabella</a></li>

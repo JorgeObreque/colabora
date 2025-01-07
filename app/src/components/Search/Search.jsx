@@ -45,7 +45,6 @@ const Search = () => {
     }
     return(
         <div className='search-main'>  
-            
             <p className='px-9'>¿Quieres conocer como se portan las empresas? Revisa la plataforma:</p>
             <div className='search-background px-9 py-4'>
                 <h1>Mi Poder de Decisión</h1>
@@ -76,7 +75,6 @@ const Search = () => {
                 </div>
                 {console.log(JSON.stringify(selectedOptions, null, 2))}
             </div>
-            
         </div>
     );
 }
