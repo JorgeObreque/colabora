@@ -1,0 +1,9 @@
+.filter-main{
+    /* border: 1px solid #2073F3; */
+    box-shadow: 0 0 0 0.2px #2073F3,
+    4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
