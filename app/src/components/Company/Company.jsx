@@ -1,6 +1,7 @@
 import React from "react";
 import './Company.css';
 import { BsChevronLeft } from "react-icons/bs";
+import Filter from "../Filter/Filter";
 
 const Company = () =>{
     return(
@@ -12,8 +13,15 @@ const Company = () =>{
                 <div className="volver"> <BsChevronLeft size={"1em"}/> volver</div>
             </div>
             <div className="body text-center">
-                <h3>Reclamos tramitados</h3>
-                
+                <h4 className="my-4">Reclamos Tramitados</h4>
+                <div className="d-flex justify-content-center">
+                    <div className="row">
+                        <div className="col-md-3 "><Filter/></div>
+                        <div className="col-md-3 "><Filter/></div>
+                        <div className="col-md-3 "><Filter/></div>
+                        <div className="col-md-3 "><Filter/></div>
+                    </div>
+                </div>                
             </div>
         </div>
     );

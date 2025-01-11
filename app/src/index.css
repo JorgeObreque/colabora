@@ -5,6 +5,41 @@
     }
 }
 
+@font-face {
+    font-family: 'gobCL';
+    src: url('./assets/fonts/gobCL/gobCL_Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gobCL'; 
+    src: url('./assets/fonts/gobCL/gobCL_Light.otf') format('opentype');
+    font-weight: 300; 
+    font-style: normal; 
+}
+
+
+@font-face {
+    font-family: 'gobCL'; 
+    src: url('./assets/fonts/gobCL/gobCL_Bold.otf') format('opentype');
+    font-weight: 700; 
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gobCL'; 
+    src: url('./assets/fonts/gobCL/gobCL_Heavy.otf') format('opentype');
+    font-weight: 900; 
+    font-style: normal;
+}
+
+body{
+    font-family: 'gobCL' !important;
+}
+
 /*CUSTOM*/
 .px-6 {
     padding-right: 5rem !important;
@@ -25,3 +60,11 @@
     padding-right: 16rem !important;
     padding-left: 16rem !important;
 }
+
+
+.px-9 {
+    padding-right: 10% !important;
+    padding-left: 10% !important;
+}
+
+
