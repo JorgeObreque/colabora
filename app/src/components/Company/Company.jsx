@@ -11,8 +11,9 @@ const Company = () =>{
                 <p>Sitio web oficial: www.bancofalabella.cl</p>
                 <div className="volver"> <BsChevronLeft size={"1em"}/> volver</div>
             </div>
-            <div className="body">
-                asasas
+            <div className="body text-center">
+                <h3>Reclamos tramitados</h3>
+                
             </div>
         </div>
     );
