@@ -1,10 +1,12 @@
 .filter-main{
-    font-family: 'gobCL';
+    font-family: 'gobCL' !important;
     font-weight: 300;
     box-shadow: 0 0 0 0.2px #2073F3,
     3px 3px 0px rgba(32, 115, 243, 0.4);
     border-radius: 25px; 
     padding: 5px 10px 5px 10px !important;
     margin: 0 !important;
+    font-size: 20px;
+    line-height: 24px;
 }
 
