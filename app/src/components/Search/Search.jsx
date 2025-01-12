@@ -26,17 +26,24 @@ const Search = () => {
         { value: "Ikea", label: "Ikea" },
     ];
 
-    const handleChange = (selected) => {
+    const handleChange = (selected) => { 
         setSelectedOptions(selected);
+        
     };
 
+ 
     const handleInputChange = (value) => {
-        setInputValue(value);
+        if(selectedOptions.length < 1){ // Este es un parche para no escoger mas de una opcion en modo multi. (Utilizado sólo por el estilo del diseño.)
+            setInputValue(value);
 
-        if (value.trim().length > 0) {
-            setMenuIsOpen(true);
-        } else {
-            setMenuIsOpen(false);
+            if (value.trim().length > 0) {
+                setMenuIsOpen(true);
+            } else {
+                setMenuIsOpen(false);
+            }
+        }
+        else{
+            return;
         }
     };
 
@@ -52,11 +59,12 @@ const Search = () => {
                 <div className="position-relative">
                     <Select
                             options={options}
-                            isMulti
                             value={selectedOptions}
                             onChange={handleChange}
                             placeholder="Escribe el nombre de una empresa que quieras conocer"
                             isSearchable={true}
+                            isClearable={false}
+                            isMulti // utilicé modo multi porque fue la única manera de posicionar la "x" al lado de la opcion. 
                             components={animatedComponents}
                             styles={customStyles}
                             isDisabled={isDisabled}

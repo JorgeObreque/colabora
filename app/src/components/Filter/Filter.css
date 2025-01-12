@@ -1,9 +1,10 @@
 .filter-main{
-    /* border: 1px solid #2073F3; */
+    font-family: 'gobCL';
+    font-weight: 300;
     box-shadow: 0 0 0 0.2px #2073F3,
-    4px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
-    color: #FFFFFF;
-    padding: 0;
-    margin: 0;
+    3px 3px 0px rgba(32, 115, 243, 0.4);
+    border-radius: 25px; 
+    padding: 5px 10px 5px 10px !important;
+    margin: 0 !important;
 }
+

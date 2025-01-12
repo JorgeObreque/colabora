@@ -14,14 +14,12 @@ const Company = () =>{
             </div>
             <div className="body text-center">
                 <h4 className="my-4">Reclamos Tramitados</h4>
-                <div className="d-flex justify-content-center">
-                    <div className="row">
-                        <div className="col-md-3 "><Filter/></div>
-                        <div className="col-md-3 "><Filter/></div>
-                        <div className="col-md-3 "><Filter/></div>
-                        <div className="col-md-3 "><Filter/></div>
-                    </div>
-                </div>                
+                <div className=" d-flex justify-content-center flex-wrap gap-2">                    
+                    <div className="d-flex"><Filter><span>En 2021-2023</span></Filter></div>
+                    <div className="d-flex"><Filter><span>En 2024</span></Filter></div>
+                    <div className="d-flex"><Filter><span>En mayo</span></Filter></div>
+                    <div className="d-flex"><Filter><span>Último Cyber</span></Filter></div>
+                </div>                 
             </div>
         </div>
     );
