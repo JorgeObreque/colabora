@@ -17,8 +17,8 @@ const Filter = ({children, styles, clickStyles, isActive, onClick}) => {
     const defaultClickStyles = {
         backgroundColor: "#2073F3",
         color: "#fff",
-        transform: "scale(1.05)",
-        transition: "all 0.3s ease",
+        transform: "scale(1.00)",
+        transition: "all 0.1s ease",
         fontWeight:"700",
         boxShadow:"none",
         ...clickStyles
@@ -29,7 +29,7 @@ const Filter = ({children, styles, clickStyles, isActive, onClick}) => {
 
     useEffect(() => {
         setCustomStyles(isActive ? { ...defaultStyles, ...defaultClickStyles } : defaultStyles);
-      }, [isActive, defaultStyles, defaultClickStyles]);
+      }, [isActive]);
 
     return(
         <>

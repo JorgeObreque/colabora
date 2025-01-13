@@ -3,6 +3,7 @@ import './Company.css';
 import { BsChevronLeft } from "react-icons/bs";
 import Filter from "../Filter/Filter";
 import FilterGroup from "../FilterGroup/FilterGroup";
+import Board from "../Board/Board";
 
 const Company = () =>{
     const styles = {color:"#E51E62",boxShadow: "0 0 0 0.2px #E51E62, 3px 3px 0px rgba(32, 115, 243, 0.4)"};
@@ -31,6 +32,9 @@ const Company = () =>{
                     <span>Último Cyber</span>
                     </Filter>
                 </FilterGroup>
+                <div className="container-xxl">
+                    <Board></Board>
+                </div>
             </div>
         </div>
     );
