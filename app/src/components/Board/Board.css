@@ -16,7 +16,9 @@
 .board-main .score{
     font-family: 'pacifico';
     font-size: 129px;
+    font-weight: 700;
     color: #1D1D59;
+    line-height:100px;
     
 }
 
