@@ -33,7 +33,17 @@ const Company = () =>{
                     </Filter>
                 </FilterGroup>
                 <div className="container-xxl">
-                    <Board></Board>
+                    <Board>
+                        <div className="title">
+                            De <b>1 a 7 la nota promedio</b> que pusieron las personas a la respuesta de la empresa fue:
+                        </div>
+                        <div className="score">
+                            4,4
+                        </div>
+                        <div className="info">
+                            de 4454 calificaciones recibidas
+                        </div>
+                    </Board>
                 </div>
             </div>
         </div>

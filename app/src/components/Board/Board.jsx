@@ -1,10 +1,10 @@
 import React from "react";
 import './Board.css';
 
-const Board = () =>{
+const Board = ({children}) =>{
     return (
-        <div className="board-main my-5">
-            <div className="title">asasasas</div>
+        <div className="board-main mt-3 py-3">
+            {children}
         </div>
     );
 }
