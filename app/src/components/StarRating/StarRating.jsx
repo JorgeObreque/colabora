@@ -1,9 +1,9 @@
 import React from "react";
-import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa"; // Importa los íconos necesarios
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const StarRating = ({ value, count = 7 }) => {
   const starColors = [
-    "#F30400", // Rojo intenso
+    "#F30400", // Rojo
     "#F35B00", // Naranja
     "#FFC200", // Amarillo
     "#F8DE00", // Amarillo claro
@@ -13,7 +13,13 @@ const StarRating = ({ value, count = 7 }) => {
   ];
 
   return (
-    <div className="star-rating d-flex justify-content-center align-items-center">
+    <div
+      className="d-flex justify-content-center align-items-center flex-wrap"
+      style={{
+        gap: "5px", // Espaciado entre las estrellas
+        padding: "20px",
+      }}
+    >
       {[...Array(count)].map((_, index) => {
         const isFilled = value >= index + 1; // Estrella completamente llena
         const isHalf = value > index && value < index + 1; // Media estrella
@@ -22,9 +28,9 @@ const StarRating = ({ value, count = 7 }) => {
           <span
             key={index}
             style={{
-              color: isFilled || isHalf ? starColors[index] : "gray", // Color dinámico o gris para vacías
-              fontSize: "50px",
-              marginRight: "5px",
+              color: isFilled || isHalf ? starColors[index] : "gray",
+              fontSize: "clamp(2rem, 5vw, 3rem)", // Escala con la pantalla (1rem a 3rem)
+              margin: "1px",
             }}
           >
             {isFilled ? (
