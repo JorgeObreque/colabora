@@ -4,6 +4,7 @@ import { BsChevronLeft } from "react-icons/bs";
 import Filter from "../Filter/Filter";
 import FilterGroup from "../FilterGroup/FilterGroup";
 import Board from "../Board/Board";
+import StarRating from "../StarRating/StarRating";
 
 const Company = () =>{
     const styles = {color:"#E51E62",boxShadow: "0 0 0 0.2px #E51E62, 3px 3px 0px rgba(32, 115, 243, 0.4)"};
@@ -40,6 +41,7 @@ const Company = () =>{
                         <div className="score">
                             4,4
                         </div>
+                        <StarRating value={3.5} count={7}></StarRating>
                         <div className="info">
                             de 4454 calificaciones recibidas
                         </div>
