@@ -34,7 +34,7 @@ const Company = () =>{
                     </Filter>
                 </FilterGroup>
                 <div className="container-xxl">
-                    <Board>
+                    <Board size={'100%'}>
                         <div className="title">
                             De <b>1 a 7 la nota promedio</b> que pusieron las personas a la respuesta de la empresa fue:
                         </div>
@@ -46,6 +46,30 @@ const Company = () =>{
                             de 4454 calificaciones recibidas
                         </div>
                     </Board>
+                    <div className="d-flex  flex-row gap-4">
+                        <Board size={''}>
+                            <div className="title">
+                                Reclamos de <b>mayo</b>
+                            </div>
+                            <div className="claims-count">
+                                7.045
+                            </div>
+                            <div className="info">
+                                <b>Empeoró</b> respecto a abril
+                            </div>
+                        </Board> 
+                        <Board size={''} >
+                            <div className="title">
+                                {/* De <b>1 a 7 la nota promedio</b> que pusieron las personas a la respuesta de la empresa fue: */}
+                            </div>
+                            <div className="score">
+                                4,4
+                            </div>
+                            <div className="info">
+                                de 4454 calificaciones recibidas
+                            </div>
+                        </Board> 
+                    </div>
                 </div>
             </div>
         </div>
