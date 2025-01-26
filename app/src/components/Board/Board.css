@@ -30,3 +30,11 @@
 .board-main .container{
     width: 80%;
 }
+
+.board-main .claims-count{
+    font-weight: 900;
+    font-size: 48px;
+    color:#1D1D59;
+    line-height:20px;
+
+}
