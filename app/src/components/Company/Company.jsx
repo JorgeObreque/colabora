@@ -7,6 +7,7 @@ import Board from "../Board/Board";
 import StarRating from "../StarRating/StarRating";
 import { AiOutlineDislike } from "react-icons/ai";
 import { AiOutlineLike } from "react-icons/ai";
+import LatestAnswers from "../LatestAnswers/LatestAnswers";
 
 const Company = () =>{
     const styles = {color:"#E51E62",boxShadow: "0 0 0 0.2px #E51E62, 3px 3px 0px rgba(32, 115, 243, 0.4)"};
@@ -109,7 +110,41 @@ const Company = () =>{
                             </div>
                         </Board> 
                     </div>
+                    <div className="d-flex gap-3">
+                        <Board size={'100%'} backgroundColor={'#FFECEC'} className="g-col-6">
+                            <div className="title">
+                                Lo más reclamado en <b>mayo</b> fue: 
+                            </div>
+                            <div className="claims-count py-3 d-flex justify-content-around align-items-center">
+                                <div className="py-3">
+                                    <div>
+                                        25%
+                                    </div>
+                                    <div className="info pt-3">
+                                        Retardo en la Entrega
+                                    </div>
+                                </div>
+                                <div className="py-3"> 
+                                    <div>
+                                        13%
+                                    </div>
+                                    <div className="info pt-3">
+                                        Publicidad Engañosa
+                                    </div>
+                                </div>
+                                <div className="py-3">
+                                    <div>
+                                        10%
+                                    </div>
+                                    <div className="info pt-3">
+                                        Incumplimiento de contrato
+                                    </div>
+                                </div>                                                               
+                            </div>
+                        </Board> 
+                    </div>
                 </div>
+                <LatestAnswers />
             </div>
         </div>
     );

@@ -1,0 +1,8 @@
+.chatbubble-main{
+    border-top: 2px solid #1D1D59;
+    border-left: 2px solid #1D1D59;
+    border-right: 2px solid #1D1D59;
+    border-bottom: 4px solid #1D1D59;
+    color: #1D1D59;
+    width: 90%;
+}

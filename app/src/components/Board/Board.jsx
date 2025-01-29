@@ -2,10 +2,11 @@ import React from "react";
 import './Board.css';
 
 
-const Board = ({children, size}) =>{
+const Board = ({children, size, backgroundColor}) =>{
 
     const customStyle = {
         width: size,
+        backgroundColor:backgroundColor,
       };
 
     return (
