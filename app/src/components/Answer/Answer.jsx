@@ -19,7 +19,7 @@ const Answer = ({solved}) =>{
     }
 
     return (
-        <div className="answer-main py-3 px-4"  onClick={HandleClick}> 
+        <div className="answer-main py-3"  onClick={HandleClick}> 
             <div className="header" style={customStyle}>
                 <div className="d-flex justify-content-between mb-2">
                     <div>Tipo de reclamo : <b>Retardo en la entrega</b></div>
@@ -35,7 +35,7 @@ const Answer = ({solved}) =>{
             </div>
             {isOpen && (
                 <>
-                    <div className="body">
+                    <div className="body px-4">
                         <AnswerContent></AnswerContent>
                     </div>
                     <div className="footer px-4 d-flex align-items-center">

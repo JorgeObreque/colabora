@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
-const StarRating = ({ value, count = 7 }) => {
+const StarRating = ({ value, count = 7, type }) => {
   const starColors = [
     "#F30400", // Rojo
     "#F35B00", // Naranja
@@ -17,7 +17,7 @@ const StarRating = ({ value, count = 7 }) => {
       className="d-flex justify-content-center align-items-center flex-wrap"
       style={{
         gap: "5px", // Espaciado entre las estrellas
-        padding: "20px",
+        padding: type === 'company' ? '5px' : "20px",
       }}
     >
       {[...Array(count)].map((_, index) => {
@@ -29,7 +29,7 @@ const StarRating = ({ value, count = 7 }) => {
             key={index}
             style={{
               color: isFilled || isHalf ? starColors[index] : "gray",
-              fontSize: "clamp(2rem, 5vw, 3rem)", // Escala con la pantalla (1rem a 3rem)
+              fontSize: type === "company" ? "2rem" : "clamp(2rem, 5vw, 3rem)", // Escala con la pantalla (2rem a 3rem)
               margin: "1px",
             }}
           >

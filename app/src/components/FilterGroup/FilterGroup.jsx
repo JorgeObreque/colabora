@@ -1,23 +1,31 @@
 import React, { useState } from "react";
 import Filter from '../Filter/Filter';
 
-const FilterGroup = ({children}) =>{
+const FilterGroup = ({children, align}) =>{
+
     const [activeIndex, setActiveIndex] = useState(null);
 
     const handleFilterClick = (index) => {
-        setActiveIndex(index); 
+        setActiveIndex((prevIndex) => (prevIndex === index ? null : index)); 
       };
-    
-    const renderedFilters = React.Children.map(children, (child, index) => {
-        if (!React.isValidElement(child)) return child;
 
+    const alignmentClass = align === "left" 
+        ? "justify-content-start" 
+        : align === "right" 
+        ? "justify-content-end" 
+        : "justify-content-center";
+    
+    const childrenArray = React.Children.toArray(children);
+    
+    const renderedFilters = childrenArray.map((child, index) => {
         return React.cloneElement(child, {
             isActive: activeIndex === index,
             onClick: () => handleFilterClick(index),
-            });
         });
+    });
+    
     return(
-        <div className="d-flex justify-content-center flex-wrap gap-3">{renderedFilters}</div>
+        <div className={`d-flex ${alignmentClass} flex-wrap gap-3`}>{renderedFilters}</div>
     );
 }
 
